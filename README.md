@@ -523,3 +523,28 @@ Pta = CFrame.new(2875.0537109375, 316.5837097167969, -3918.525634765625)
     tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
     tween:Play()
 end)
+local Tab3 = CenterHubNo1:CreateTab("Combat/PVP")
+local TPp = Tab3:CreateSector("Combat","left")
+Plr = {}
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(Plr,v.Name) 
+end
+TPp:AddDropdown("Select Player",Plr,"None",false,function(t)
+    PlayerTP = t
+end)
+TPp:AddToggle("TP to Player",false,function(t)
+    _G.TPPlayer = t
+while _G.TPPlayer do wait()
+pcall(function()
+while _G.TPPlayer do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+end
+end)
+end
+end)
+TPp:AddButton("Refresh",function()
+    table.clear(Plr)
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(Plr,v.Name)
+    end
+end)
