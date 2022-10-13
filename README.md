@@ -455,6 +455,36 @@ AutoFarm:AddToggle("Combatatk",false,function(c)
             [6] = 919
         }
         game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
+        wait(0.2)
+                    local args = {
+            [1] = "fist_combat",
+            [2] = game:GetService("Players").LocalPlayer,
+            [3] = game:GetService("Players").LocalPlayer.Character,
+            [4] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+            [5] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+            [6] = 919
+        }
+        game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
+        wait(0.2)
+                    local args = {
+            [1] = "fist_combat",
+            [2] = game:GetService("Players").LocalPlayer,
+            [3] = game:GetService("Players").LocalPlayer.Character,
+            [4] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+            [5] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+            [6] = 919
+        }
+        game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
+        wait(0.2)
+                    local args = {
+            [1] = "fist_combat",
+            [2] = game:GetService("Players").LocalPlayer,
+            [3] = game:GetService("Players").LocalPlayer.Character,
+            [4] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+            [5] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+            [6] = 919
+        }
+        game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
         end
     end)
 end)
@@ -462,7 +492,17 @@ AutoFarm:AddToggle("SwordSlad",false,function(s)
     _G.SwordSlad = s
     while _G.SwordSlad do wait()
     pcall(function()
-        while _G.SwordSlad do wait(1.1)
+        while _G.SwordSlad do wait(1.2)
+            local args = {
+                [1] = "Sword_Combat_Slash",
+                [2] = game:GetService("Players").LocalPlayer,
+                [3] = game:GetService("Players").LocalPlayer.Character,
+                [4] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+                [5] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+                [6] = 919
+            }
+            game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
+            wait(0.2)
             local args = {
                 [1] = "Sword_Combat_Slash",
                 [2] = game:GetService("Players").LocalPlayer,
