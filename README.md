@@ -387,6 +387,13 @@ AutoFarm:AddToggle("Item",false,function(i)
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Stylish Mask"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+
 end
 end)
 end
