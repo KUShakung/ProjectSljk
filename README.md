@@ -224,7 +224,52 @@
             end)
         end
     end)
-    
+    AutoFarm:AddButton("KadenPosition",function(g)
+    Pk = CFrame.new(-609.6364135742188, 316.7616882324219, -2915.660888671875)
+        local Distance = (Pk.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pk})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("KadenFarm",false,function(k)
+        _G.KadenFarm = k
+        while _G.KadenFarm do wait()
+        pcall(function()
+        while _G.KadenFarm do wait()
+        Pk = game:GetService("Workspace").Mobs.Bandits.Zone2.Kaden["Bandit Kaden"].HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Pk.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pk})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    AutoFarm:AddButton("ZokuPosition",function(g)
+    Pzk = CFrame.new(170.00003051757812, 282.8826904296875, -1809.2303466796875)
+        local Distance = (Pzk.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pzk})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("ZokuFarm",false,function(zk)
+        _G.ZokuFarm = zk
+        while _G.ZokuFarm do wait()
+        pcall(function()
+        while _G.ZokuFarm do wait()
+        Pk = game:GetService("Workspace").Mobs.Bandits.Zone1.Boss["Bandit Zoku"].HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Pk.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pk})
+        tween:Play()
+                end
+            end)
+        end
+    end)
     
     
     local AutoFarm = Tab:CreateSector("FuncionFarm","right")
@@ -378,4 +423,32 @@
     		    end
             end)
         end
+    end)
+    
+    local Teleport = CenterHubNo1:CreateTab("Teleport")
+    local Teleport = Teleport:CreateSector("Teleport","left")
+    Teleport:AddLabel("Teleport")
+    Teleport:AddButton("Kiribating Village",function(g)
+    Pta = CFrame.new(122.01366424560547, 281.8326416015625, -1631.96337890625)
+        local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
+        tween:Play()
+    end)
+    Teleport:AddButton("Ushumaru Village",function(g)
+    Pta = CFrame.new(-506.6256103515625, 289.8343505859375, -3144.7080078125)
+        local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
+        tween:Play()
+    end)
+    Teleport:AddButton("Butterfly Mansion",function(g)
+    Pta = CFrame.new(2999.010498046875, 315.6255187988281, -3888.03369140625)
+        local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
+        tween:Play()
     end)
