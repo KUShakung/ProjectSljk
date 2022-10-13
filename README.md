@@ -37,6 +37,7 @@ AutoFarm:AddToggle("ZanegutsuFarm",false,function(a)
     while _G.ZanegutsuFarm do wait()
     pcall(function()
     while _G.ZanegutsuFarm do wait()
+    Equip(_G.SelectWeapon)
     Pza = game:GetService("Workspace").Mobs.Bosses.ThunderTrainee.Zanegutsu["Zanegutsu Kuuchie"].HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pza.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -60,6 +61,7 @@ AutoFarm:AddToggle("ZabitoFarm",false,function(zb)
     while _G.Zabito do wait()
     pcall(function()
     while _G.Zabito do wait()
+    Equip(_G.SelectWeapon)
     Pza = game:GetService("Workspace").Mobs.Bosses["Water_Trainee"].Sabito.Sabito.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pza.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -83,6 +85,7 @@ AutoFarm:AddToggle("ShinobuFarm",false,function(s)
     while _G.Shiron do wait()
     pcall(function()
     while _G.Shiron do wait()
+    Equip(_G.SelectWeapon)
     Ps = game:GetService("Workspace").Mobs.Bosses["Insect_Trainee"].Ouwbae.Shiron.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Ps.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -106,6 +109,7 @@ AutoFarm:AddToggle("GiyuFarm",false,function(g)
     while _G.Giyu do wait()
     pcall(function()
     while _G.Giyu do wait()
+    Equip(_G.SelectWeapon)
     Pg = game:GetService("Workspace").Mobs.Bosses.Water.Giyu.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pg.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -129,6 +133,7 @@ AutoFarm:AddToggle("NezukoFarm",false,function(n)
     while _G.NezukoFarm do wait()
     pcall(function()
     while _G.NezukoFarm do wait()
+    Equip(_G.SelectWeapon)
     Pn = game:GetService("Workspace").Mobs.Bosses["Bomb_boss"].Nezuko.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pn.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -152,6 +157,7 @@ AutoFarm:AddToggle("SanemiFarm",false,function(n)
     while _G.SanemiFarm do wait()
     pcall(function()
     while _G.SanemiFarm do wait()
+    Equip(_G.SelectWeapon)
     Pse = game:GetService("Workspace").Mobs.Bosses["Wind_Trainee"].Sanemi.Sanemi.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pse.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -175,6 +181,7 @@ AutoFarm:AddToggle("SlasherFarm",false,function(n)
     while _G.SanemiFarm do wait()
     pcall(function()
     while _G.SanemiFarm do wait()
+    Equip(_G.SelectWeapon)
     Psl = game:GetService("Workspace").Mobs.Bosses["Reaper Boss"].Slasher.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Psl.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -198,6 +205,7 @@ AutoFarm:AddToggle("TamariFarm",false,function(ta)
     while _G.TamariFarm do wait()
     pcall(function()
     while _G.TamariFarm do wait()
+    Equip(_G.SelectWeapon)
     Pta = game:GetService("Workspace").Mobs.Bosses.Tamari.Susamaru.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -213,6 +221,7 @@ AutoFarm:AddToggle("AorrowFarm",false,function(a)
     while _G.AorrowFarm do wait()
     pcall(function()
     while _G.AorrowFarm do wait()
+    Equip(_G.SelectWeapon)
     Pa = game:GetService("Workspace").Mobs.Bosses.Arrow.Yahaba.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pa.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -236,6 +245,7 @@ AutoFarm:AddToggle("KadenFarm",false,function(k)
     while _G.KadenFarm do wait()
     pcall(function()
     while _G.KadenFarm do wait()
+    Equip(_G.SelectWeapon)
     Pk = game:GetService("Workspace").Mobs.Bandits.Zone2.Kaden["Bandit Kaden"].HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pk.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -259,6 +269,7 @@ AutoFarm:AddToggle("ZokuFarm",false,function(zk)
     while _G.ZokuFarm do wait()
     pcall(function()
     while _G.ZokuFarm do wait()
+    Equip(_G.SelectWeapon)
     Pk = game:GetService("Workspace").Mobs.Bandits.Zone1.Boss["Bandit Zoku"].HumanoidRootPart.CFrame * CFrame.new(0,0,3)
     local Distance = (Pk.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
@@ -272,6 +283,29 @@ end)
 
 
 local AutoFarm = Tab:CreateSector("FuncionFarm","right")
+    Weapon = {}
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+        if v:IsA"Tool" then
+            table.insert(Weapon,v.Name)
+    end
+end
+local WE = AutoFarm:AddDropdown("Select Weapon",Weapon,"Select Weapon",false,function(t)
+    _G.SelectWeapon = t
+end)
+function Equip(ToolX)
+    if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(ToolX) then
+        getgenv().Tol = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(ToolX)
+        game.Players.LocalPlayer.Character.Humanoid:EquipTool(Tol)
+    end
+end
+AutoFarm:AddButton("ReSet Weapon",function()
+        table.clear(Weapon)
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+        if v:IsA"Tool" then
+        WE:Add(v.Name)
+        end
+    end
+end)
 AutoFarm:AddToggle("Muzan",false,function(m)
     _G.Muzan = m
     while _G.Muzan do wait()
@@ -499,6 +533,14 @@ Pta = CFrame.new(4307.15380859375, 341.8394775390625, -4256.1611328125)
 end)
 Teleport:AddButton("Abubu Cave",function(g)
 Pta = CFrame.new(1057.64501953125, 274.0617980957031, -3447.58056640625)
+    local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+    local Speed = 300 -- ความเร็วของมึง
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
+    tween:Play()
+end)
+Teleport:AddButton("Medic Hume",function(g)
+Pta = CFrame.new(506.4931335449219, 321.09930419921875, -2289.574462890625)
     local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
     tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
