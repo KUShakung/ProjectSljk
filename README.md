@@ -306,6 +306,87 @@ AutoFarm:AddButton("ReSet Weapon",function()
         end
     end
 end)
+AutoFarm:AddToggle("Item",false,function(i)
+    _G.Item = i
+    while _G.Item do wait()
+        pcall(function()
+            while _G.Item do wait()
+                                local args = {
+                    [1] = "Shinobu Haorie"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Stamina Elixir"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Health Elixir"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Tanjiro Haorie"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Giyu Haorie"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Wind Katana"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Water Katana"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Lightning Katana"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Giyu's Katana"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Zenitsu Haorie"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Straw Hat"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                
+                local args = {
+                    [1] = "Shinobu’s Katana"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+end
+end)
+end
+end)
+
 AutoFarm:AddToggle("Muzan",false,function(m)
     _G.Muzan = m
     while _G.Muzan do wait()
@@ -539,7 +620,7 @@ Pta = CFrame.new(1057.64501953125, 274.0617980957031, -3447.58056640625)
     tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
     tween:Play()
 end)
-Teleport:AddButton("Medic Hume",function(g)
+Teleport:AddButton("Medic Home",function(g)
 Pta = CFrame.new(506.4931335449219, 321.09930419921875, -2289.574462890625)
     local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
     local Speed = 300 -- ความเร็วของมึง
