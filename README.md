@@ -40,7 +40,7 @@
             [1] = "AddQuest",
             [2] = "Players.LocalPlayer.PlayerGui.Npc_Dialogue.LocalScript.Functions",
             [3] = 97143.16111449999,
-            [4] = game:GetService("ReplicatedStorage").Player_Data.AmbushReady.Quest,
+            [4] = game:GetService("ReplicatedStorage").Player_Data.LocalPlayer.Quest,
             [5] = {
                 ["List"] = {
                     [1] = {
