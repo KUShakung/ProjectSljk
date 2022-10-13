@@ -1,3 +1,4 @@
+    LP = 'frivfrivy0'
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Ui__Project/Script/XeNonUi", true))()
     library:CreateWatermark("Sleep Hub") 
     local CenterHubNo1 = library:CreateWindow("SleepHub ",Enum.KeyCode.RightControl)
@@ -22,49 +23,8 @@
             end
         end)
     end)
-    AutoFarm:AddToggle("DalivaryQuest",false,function(t)
-    _G.Dalivary = t
-    pcall(function()
     
-        while _G.Dalivary do wait(1)
-        
-        P = CFrame.new(223.16680908203125, 282.8826904296875, -1608.6783447265625)
-        P1 = CFrame.new(453.7693176269531, 275.0509033203125, -2672.27734375)
-        local Distance = (P.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
-        local Speed = 300 -- ความเร็วของมึง
-        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
-        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = P})
-        tween:Play()
-        wait(40)
-        local args = {
-            [1] = "AddQuest",
-            [2] = "Players.LocalPlayer.PlayerGui.Npc_Dialogue.LocalScript.Functions",
-            [3] = 97143.16111449999,
-            [4] = game:GetService("ReplicatedStorage").Player_Data.LocalPlayer.Quest,
-            [5] = {
-                ["List"] = {
-                    [1] = {
-                        ["Name"] = "Deliver wagon",
-                        ["Progress"] = {
-                            [1] = 0,
-                            [2] = 1
-                        }
-                    }
-                },
-                ["Current"] = "Deliver grandpa Wagwon's wagon"
-            }
-        }
-        game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S:FireServer(unpack(args))
-        wait(3.5)
-        local Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
-        local Speed = 300 -- ความเร็วของมึง
-        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
-        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = P1})
-        tween:Play()
-        wait(5)
-            end
-        end)
-    end)
+    
     
     AutoFarm:AddButton("ZanegutsuPosion",function(z)
         Pz = CFrame.new(-333.6499328613281, 426.4827880859375, -2384.53662109375)
@@ -112,6 +72,53 @@
             end)
         end
     end)
+    AutoFarm:AddButton("ShironPosition",function(z)
+        Pz = CFrame.new(2998.787353515625, 315.6255187988281, -3891.769287109375)
+        local Distance = (Pz.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pz})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("ShinobuFarm",false,function(s)
+        _G.Shiron = s
+        while _G.Shiron do wait()
+        pcall(function()
+        while _G.Shiron do wait()
+        Ps = game:GetService("Workspace").Mobs.Bosses["Insect_Trainee"].Ouwbae.Shiron.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Ps.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Ps})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    AutoFarm:AddButton("GiyuPosition",function(g)
+    Pg = CFrame.new(3080.2529296875, 316.5837097167969, -2904.34033203125)
+        local Distance = (Pz.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pz})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("GiyuFarm",false,function(g)
+        _G.Giyu = g
+        while _G.Giyu do wait()
+        pcall(function()
+        while _G.Giyu do wait()
+        Pg = game:GetService("Workspace").Mobs.Bosses.Water.Giyu.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Pg.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pg})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    
     local AutoFarm = Tab:CreateSector("FuncionFarm","right")
     AutoFarm:AddToggle("Combatatk",false,function(c)
         _G.combatatk = c
@@ -246,28 +253,6 @@
                 end
             end)
         end
-    end)
-    AutoFarm:AddToggle("AutoBlock",false,function(b)
-        _G.block = b
-        pcall(function()
-            while _G.block do wait()
-                local args = {
-                    [1] = "add_blocking",
-                    [2] = "Players.LocalPlayer.PlayerScripts.Skills_Modules.Combat.Sword//Block",
-                    [3] = 103422.71293339999,
-                    [4] = game:GetService("ReplicatedStorage").PlayerValues.AmbushReady,
-                    [5] = 10
-                }
-                game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S:FireServer(unpack(args))
-            end
-        end)
-    end)
-    AutoFarm:AddButton("RemoveBlock",function()
-        local args = {
-            [1] = "remove_blocking",
-            [2] = game:GetService("ReplicatedStorage").PlayerValues.AmbushReady
-        }
-        game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
     end)
     AutoFarm:AddToggle("NoClip",true,function(vu)
         _G.NoClip = vu
