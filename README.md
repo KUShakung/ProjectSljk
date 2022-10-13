@@ -310,84 +310,85 @@ AutoFarm:AddToggle("Item",false,function(i)
     _G.Item = i
     while _G.Item do wait()
         pcall(function()
-            while _G.Item do wait()
+            while _G.Item do wait(.1)
                 local args = {
                     [1] = "Ore"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                wait(.1)
                 local args = {
                     [1] = "Shinobu Haorie"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Stamina Elixir"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Health Elixir"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Tanjiro Haorie"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Giyu Haorie"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Wind Katana"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Water Katana"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Lightning Katana"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Giyu's Water Katana"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Zenitsu Haorie"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Straw Hat"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Shinobu’s Katana"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
-                
+                wait(.1)
                 local args = {
                     [1] = "Stylish Mask"
                 }
