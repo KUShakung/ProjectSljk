@@ -360,7 +360,7 @@ AutoFarm:AddToggle("Item",false,function(i)
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
                 
                 local args = {
-                    [1] = "Giyu's Katana"
+                    [1] = "Giyu's Water Katana"
                 }
                 
                 workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
@@ -462,7 +462,7 @@ AutoFarm:AddToggle("SwordSlad",false,function(s)
     _G.SwordSlad = s
     while _G.SwordSlad do wait()
     pcall(function()
-        while _G.SwordSlad do wait(1.2)
+        while _G.SwordSlad do wait(1.1)
             local args = {
                 [1] = "Sword_Combat_Slash",
                 [2] = game:GetService("Players").LocalPlayer,
