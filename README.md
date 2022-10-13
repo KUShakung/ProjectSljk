@@ -96,11 +96,11 @@
         end
     end)
     AutoFarm:AddButton("GiyuPosition",function(g)
-    Pg = CFrame.new(3080.2529296875, 316.5837097167969, -2904.34033203125)
-        local Distance = (Pz.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+    Pg = CFrame.new(3089.76123046875, 316.5837097167969, -2910.339111328125)
+        local Distance = (Pg.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
         local Speed = 300 -- ความเร็วของมึง
         tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
-        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pz})
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pg})
         tween:Play()
     end)
     AutoFarm:AddToggle("GiyuFarm",false,function(g)
