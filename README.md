@@ -311,7 +311,12 @@ AutoFarm:AddToggle("Item",false,function(i)
     while _G.Item do wait()
         pcall(function()
             while _G.Item do wait()
-                                local args = {
+                local args = {
+                    [1] = "Ore"
+                }
+                
+                workspace.Debree.Loot_Chest.Add_To_Inventory:InvokeServer(unpack(args))
+                local args = {
                     [1] = "Shinobu Haorie"
                 }
                 
