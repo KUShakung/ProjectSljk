@@ -118,6 +118,54 @@
             end)
         end
     end)
+    AutoFarm:AddButton("NezukoPosition",function(g)
+    Pn = CFrame.new(3689.490966796875, 342.6419982910156, -4647.8935546875)
+        local Distance = (Pn.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pn})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("NezukoFarm",false,function(n)
+        _G.NezukoFarm = n
+        while _G.NezukoFarm do wait()
+        pcall(function()
+        while _G.NezukoFarm do wait()
+        Pn = game:GetService("Workspace").Mobs.Bosses["Bomb_boss"].Nezuko.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Pn.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pn})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    AutoFarm:AddButton("SanemiPosition",function(g)
+    Pse = CFrame.new(1644.0997314453125, 348.55377197265625, -3614.8505859375)
+        local Distance = (Pse.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pse})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("SanemiFarm",false,function(n)
+        _G.SanemiFarm = n
+        while _G.SanemiFarm do wait()
+        pcall(function()
+        while _G.SanemiFarm do wait()
+        Pse = game:GetService("Workspace").Mobs.Bosses["Wind_Trainee"].Sanemi.Sanemi.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Pse.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pse})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    
+    
     
     local AutoFarm = Tab:CreateSector("FuncionFarm","right")
     AutoFarm:AddToggle("Combatatk",false,function(c)
