@@ -1,4 +1,3 @@
-    LP = 'frivfrivy0'
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Ui__Project/Script/XeNonUi", true))()
     library:CreateWatermark("Sleep Hub") 
     local CenterHubNo1 = library:CreateWindow("SleepHub ",Enum.KeyCode.RightControl)
@@ -159,6 +158,67 @@
         local Speed = 300 -- ความเร็วของมึง
         tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
         tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pse})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    AutoFarm:AddButton("SlasherPosition",function(g)
+    Psl = CFrame.new(4278.5986328125, 341.8394775390625, -4401.01171875)
+        local Distance = (Psl.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Psl})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("SlasherFarm",false,function(n)
+        _G.SanemiFarm = n
+        while _G.SanemiFarm do wait()
+        pcall(function()
+        while _G.SanemiFarm do wait()
+        Psl = game:GetService("Workspace").Mobs.Bosses["Reaper Boss"].Slasher.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Psl.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Psl})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    AutoFarm:AddButton("Tamari And Aorrow Position",function(g)
+    Pta = CFrame.new(1540.848388671875, 329.5157470703125, -4562.80126953125)
+        local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
+        tween:Play()
+    end)
+    AutoFarm:AddToggle("TamariFarm",false,function(ta)
+        _G.TamariFarm = ta
+        while _G.TamariFarm do wait()
+        pcall(function()
+        while _G.TamariFarm do wait()
+        Pta = game:GetService("Workspace").Mobs.Bosses.Tamari.Susamaru.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Pta.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pta})
+        tween:Play()
+                end
+            end)
+        end
+    end)
+    AutoFarm:AddToggle("AorrowFarm",false,function(a)
+        _G.AorrowFarm = a
+        while _G.AorrowFarm do wait()
+        pcall(function()
+        while _G.AorrowFarm do wait()
+        Pa = game:GetService("Workspace").Mobs.Bosses.Arrow.Yahaba.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+        local Distance = (Pa.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+        local Speed = 300 -- ความเร็วของมึง
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pa})
         tween:Play()
                 end
             end)
