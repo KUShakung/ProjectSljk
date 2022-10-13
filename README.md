@@ -272,6 +272,21 @@ end)
 
 
 local AutoFarm = Tab:CreateSector("FuncionFarm","right")
+AutoFarm:AddToggle("Muzan",false,function(m)
+    _G.Muzan = m
+    while _G.Muzan do wait()
+    pcall(function()
+    while _G.Muzan do wait()
+    Pk = game:GetService("Workspace").Muzan.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+    local Distance = (Pk.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude -- จุดที่จะไป Position Only
+    local Speed = 300 -- ความเร็วของมึง
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear)
+    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = Pk})
+    tween:Play()
+            end
+        end)
+    end
+end)
 AutoFarm:AddToggle("Combatatk",false,function(c)
     _G.combatatk = c
     pcall(function()
@@ -545,6 +560,6 @@ end)
 TPp:AddButton("Refresh",function()
     table.clear(Plr)
     for i,v in pairs(game:GetService("Players"):GetChildren()) do
-    table.insert(Plr,v.Name)
+        table.insert(Plr,v.Name) 
     end
 end)
