@@ -739,3 +739,6 @@ TPp:AddButton("Refresh",function()
         table.insert(Plr,v.Name) 
     end
 end)
+TPp:AddButton("RejoinSever",function()
+	local ts = game:GetService("TeleportService") local p = game.Players.LocalPlayer ts:Teleport(game.PlaceId, p)
+end)
